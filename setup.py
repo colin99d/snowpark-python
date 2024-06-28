@@ -24,7 +24,7 @@ INSTALL_REQ_LIST = [
     "cloudpickle>=1.6.0,<=2.2.1,!=2.1.0,!=2.2.0;python_version<'3.11'",
     "cloudpickle==2.2.1;python_version~='3.11'",  # backend only supports cloudpickle 2.2.1 + python 3.11 at the moment
 ]
-REQUIRED_PYTHON_VERSION = ">=3.8, <3.12"
+REQUIRED_PYTHON_VERSION = ">=3.8, <3.13"
 
 if os.getenv("SNOWFLAKE_IS_PYTHON_RUNTIME_TEST", False):
     REQUIRED_PYTHON_VERSION = ">=3.8"
